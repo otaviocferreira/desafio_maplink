@@ -4,8 +4,6 @@ import lombok.*;
 import org.hibernate.Hibernate;
 
 import javax.persistence.*;
-import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.NotNull;
 import java.time.LocalDateTime;
 import java.util.Objects;
 
@@ -24,21 +22,17 @@ public class Agendamento {
     @Column(name = "id")
     private Long id;
 
-    @NotNull
     @Column(name = "data_hora")
     private LocalDateTime dataHora;
 
-    @NotBlank
     @Column(name = "observacao")
     private String observacao;
 
-    @NotNull
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "cliente_id")
     @ToString.Exclude
     private Cliente cliente;
 
-    @NotNull
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "servico_codigo")
     @ToString.Exclude

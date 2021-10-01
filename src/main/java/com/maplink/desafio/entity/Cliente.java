@@ -4,7 +4,6 @@ import lombok.*;
 import org.hibernate.Hibernate;
 
 import javax.persistence.*;
-import javax.validation.constraints.Size;
 import java.util.Objects;
 
 @Getter
@@ -22,11 +21,9 @@ public class Cliente {
     @Column(name = "id")
     private Long id;
 
-    @Size(min = 3, max = 40)
     @Column(name = "nome")
     private String nome;
 
-    @Size(min = 11, max = 11)
     @Column(name = "cpf")
     private String cpf;
 
