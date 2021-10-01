@@ -1,5 +1,7 @@
 package com.maplink.desafio.mother;
 
+import com.maplink.desafio.dto.AgendamentoDto;
+import com.maplink.desafio.dto.AgendamentoRemarcacaoDto;
 import com.maplink.desafio.entity.Agendamento;
 import com.maplink.desafio.entity.Servico;
 import lombok.AccessLevel;
@@ -15,6 +17,19 @@ public class AgendamentoMother {
         return Agendamento.builder()
                 .dataHora(LocalDateTime.now())
                 .observacao("Agendamento para Teste")
+                .build();
+    }
+
+    public static AgendamentoDto getAgendamentoDto() {
+        return AgendamentoDto.builder()
+                .dataHora(LocalDateTime.now())
+                .observacao("Agendamento para Teste")
+                .build();
+    }
+
+    public static AgendamentoRemarcacaoDto getAgendamentoRemarcacaoDto() {
+        return AgendamentoRemarcacaoDto.builder()
+                .dataHora(LocalDateTime.now())
                 .build();
     }
 }
