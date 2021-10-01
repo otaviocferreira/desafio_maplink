@@ -4,8 +4,6 @@ import lombok.*;
 import org.hibernate.Hibernate;
 
 import javax.persistence.*;
-import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.NotNull;
 import java.math.BigDecimal;
 import java.util.Objects;
 
@@ -24,15 +22,12 @@ public class Servico {
     @Column(name = "id")
     private Long id;
 
-    @NotNull
     @Column(name = "codigo")
     private String codigo;
 
-    @NotBlank
     @Column(name = "descricao")
     private String descricao;
 
-    @NotNull
     @Column(name = "valor")
     private BigDecimal valor;
 
