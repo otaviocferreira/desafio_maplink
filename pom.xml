@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.maplink</groupId>
     <artifactId>desafio</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>1.0.0</version>
     <name>desafio</name>
     <description>Desafio para a MapLink</description>
     <properties>
@@ -109,6 +109,14 @@
                             -Amapstruct.defaultComponentModel=spring
                         </compilerArg>
                     </compilerArgs>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>com.spotify</groupId>
+                <artifactId>dockerfile-maven-plugin</artifactId>
+                <version>1.4.2</version>
+                <configuration>
+                    <repository>otaviocferreira/desafio_maplink</repository>
                 </configuration>
             </plugin>
         </plugins>
