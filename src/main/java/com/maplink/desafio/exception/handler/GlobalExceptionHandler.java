@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 @RestControllerAdvice
 public class GlobalExceptionHandler {
 
-    private ExceptionResponseBuilder exceptionResponseBuilder;
+    private final ExceptionResponseBuilder exceptionResponseBuilder;
 
     @ExceptionHandler
     public ResponseEntity<ExceptionResponse> handleBusinessException(BusinessException exception) {

@@ -3,11 +3,9 @@ package com.maplink.desafio.mother;
 import com.maplink.desafio.dto.AgendamentoDto;
 import com.maplink.desafio.dto.AgendamentoRemarcacaoDto;
 import com.maplink.desafio.entity.Agendamento;
-import com.maplink.desafio.entity.Servico;
 import lombok.AccessLevel;
 import lombok.NoArgsConstructor;
 
-import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
 @NoArgsConstructor(access = AccessLevel.PRIVATE)

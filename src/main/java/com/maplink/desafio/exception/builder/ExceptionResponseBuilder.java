@@ -4,9 +4,11 @@ import com.maplink.desafio.exception.enums.ExceptionMensagem;
 import com.maplink.desafio.exception.response.ExceptionResponse;
 import com.maplink.desafio.exception.utils.MensagemUtils;
 import lombok.RequiredArgsConstructor;
+import org.springframework.stereotype.Component;
 
 import java.time.LocalDateTime;
 
+@Component
 @RequiredArgsConstructor
 public class ExceptionResponseBuilder {
 

@@ -3,7 +3,6 @@ package com.maplink.desafio.service;
 import com.maplink.desafio.dto.AgendamentoDto;
 import com.maplink.desafio.dto.AgendamentoRemarcacaoDto;
 import com.maplink.desafio.entity.Agendamento;
-import com.maplink.desafio.mapper.AgendamentoMapper;
 import com.maplink.desafio.mapper.AgendamentoMapperImpl;
 import com.maplink.desafio.repository.AgendamentoRepository;
 import com.maplink.desafio.service.impl.AgendamentoServiceImpl;
@@ -13,7 +12,6 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import org.junit.runner.RunWith;
 import org.mockito.*;
 import org.mockito.junit.jupiter.MockitoExtension;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.junit4.SpringRunner;
 

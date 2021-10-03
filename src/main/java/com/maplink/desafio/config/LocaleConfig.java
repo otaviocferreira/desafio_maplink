@@ -1,7 +1,6 @@
-package com.maplink.config;
+package com.maplink.desafio.config;
 
 import org.springframework.context.MessageSource;
-import org.springframework.context.MessageSourceResolvable;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.support.ReloadableResourceBundleMessageSource;

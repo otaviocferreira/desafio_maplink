@@ -2,9 +2,7 @@ package com.maplink.desafio.service.impl;
 
 import com.maplink.desafio.dto.AgendamentoDto;
 import com.maplink.desafio.dto.AgendamentoRemarcacaoDto;
-import com.maplink.desafio.dto.ServicoDto;
 import com.maplink.desafio.entity.Agendamento;
-import com.maplink.desafio.entity.Servico;
 import com.maplink.desafio.exception.BusinessException;
 import com.maplink.desafio.exception.enums.ExceptionMensagem;
 import com.maplink.desafio.mapper.AgendamentoMapper;
@@ -15,7 +13,6 @@ import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.List;
 import java.util.stream.Collectors;
 
