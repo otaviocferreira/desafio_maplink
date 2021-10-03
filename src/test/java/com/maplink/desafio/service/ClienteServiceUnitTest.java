@@ -56,7 +56,7 @@ public class ClienteServiceUnitTest {
 
     @Test
     public void dadoUmClienteSalvoQuandoAlteradoDadoUmaSolicitacaoDeAlteracaoEntaoClienteAtualizadoComSucesso() {
-        ClienteDto clienteDto = getClienteDto();
+        final ClienteDto clienteDto = getClienteDto();
         clienteDto.setId(1L);
         clienteDto.setNome("Novo nome");
         final Cliente cliente = getCliente();
